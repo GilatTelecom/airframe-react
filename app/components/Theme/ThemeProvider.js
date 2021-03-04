@@ -17,6 +17,7 @@ export class ThemeProvider extends React.Component {
             style: 'light',
             color: 'primary',
         };
+
     }
 
     componentDidMount() {

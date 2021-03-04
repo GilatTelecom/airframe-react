@@ -20,9 +20,6 @@ const HeaderAuth = (props) => (
         <h5 className="text-center mb-4">
             { props.title }
         </h5>
-        <p className="text-center">
-            { props.text }
-        </p>
     </div>
 )
 HeaderAuth.propTypes = {
@@ -33,7 +30,6 @@ HeaderAuth.propTypes = {
 };
 HeaderAuth.defaultProps = {
     title: "Waiting for Data...",
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptas aperiam odit, reiciendis dicta nihil.",
     iconClassName: "text-theme"
 };
 

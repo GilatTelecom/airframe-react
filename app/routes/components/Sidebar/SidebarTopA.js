@@ -20,26 +20,7 @@ const SidebarTopA = () => (
         { /* START: Sidebar Default */ }
         <Sidebar.HideSlim>
             <Sidebar.Section className="pt-0">
-                <Link to="/" className="d-block">
-                    <Sidebar.HideSlim>
-                        <Avatar.Image
-                            size="lg"
-                            src={ avatarImg }
-                            addOns={[
-                                <AvatarAddOn.Icon 
-                                    className="fa fa-circle"
-                                    color="white"
-                                    key="avatar-icon-bg"
-                                />,
-                                <AvatarAddOn.Icon 
-                                    className="fa fa-circle"
-                                    color="success"
-                                    key="avatar-icon-fg"
-                                />
-                            ]}
-                        />
-                    </Sidebar.HideSlim>
-                </Link>
+                
                 
                 <UncontrolledButtonDropdown>
                     <DropdownToggle color="link" className="pl-0 pb-0 btn-profile sidebar__link">

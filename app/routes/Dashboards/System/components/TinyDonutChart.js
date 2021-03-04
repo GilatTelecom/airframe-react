@@ -10,9 +10,10 @@ import colors from './../../../../colors';
 
 const TinyDonutChart = (props) => {
     const data = [
-        {name: 'Group A', value: 40+Math.random()*100},
-        {name: 'Group B', value: Math.random()*100}
+        {name: 'Group A', value: props.percent !== undefined ? parseInt(props.percent) : 0},
+        {name: 'Group B', value: props.percent !== undefined ? 100 - parseInt(props.percent) : 0}
     ];
+    
     return (
         <PieChart width={ 80 } height={ 80 }>
             <Pie

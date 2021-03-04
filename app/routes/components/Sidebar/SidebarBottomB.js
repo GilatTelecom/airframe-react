@@ -63,24 +63,6 @@ const SidebarBottomB = () => (
             <Sidebar.ShowSlim>
                 <div className="text-center">
                     <UncontrolledButtonDropdown direction="right" className="mb-3">
-                        <DropdownToggle color="link" className="text-left pl-0 pb-0">
-                            <Avatar.Image
-                                size="sm"
-                                src={ randomAvatar() }
-                                addOns={[
-                                    <AvatarAddOn.Icon 
-                                        className="fa fa-circle"
-                                        color="white"
-                                        key="avatar-icon-bg"
-                                    />,
-                                    <AvatarAddOn.Icon 
-                                        className="fa fa-circle"
-                                        color="success"
-                                        key="avatar-icon-fg"
-                                    />
-                                ]}
-                            /> 
-                        </DropdownToggle>
                         <DropdownProfile />
                     </UncontrolledButtonDropdown>
                 </div>

@@ -41,19 +41,20 @@ const CardSystem = (props) => (
            <div className="d-flex">
                <span>
                     <Badge pill className="mb-3" color={ props.badgeColor } >
-                        <i className={` fa fa-fw fa-caret-${ randomArray(caret) }`} />
-                        { randomArray(percents) }%
+                        <i className={` fa fa-fw fa-caret-${ props.caret !== undefined ? props.caret : "up" }`} />
+                        { props.percent !== undefined ? props.percent : 0 }%
                     </Badge>
                     <h6 className="mb-0">
                         { props.title }
                     </h6>
                     <h2 className="mb-3">
-                        { randomArray(percents) } <small>{ props.unit }</small>
+                        { props.value !== undefined ? props.value : 0 } <small>{ props.unit }</small>
                     </h2>
                 </span>
                 <span className="text-right ml-auto">
                     <TinyDonutChart 
                         pieColor={props.pieColor}
+                        percent={ props.value !== undefined ? props.value : 0 }
                     />
                 </span>
             </div>

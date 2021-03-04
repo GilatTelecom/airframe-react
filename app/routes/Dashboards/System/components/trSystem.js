@@ -71,11 +71,9 @@ const TrSystem = (props) => (
         <td style={{ width: '20%' }}>
             <span className="d-flex mb-2">
                 <h6 className="mb-0 mr-5">
-                    { randomArray(name) }
+                    { props.name !== undefined ? props.name : randomArray(name) }
                 </h6>
-                <Badge pill className="ml-auto align-self-center">
-                    v. { randomArray(versions) }
-                </Badge>
+                { props.badge !== undefined && <Badge pill className="ml-auto align-self-center">{props.badge}</Badge> }
             </span>
             <Progress value={ randomArray(percents) } style={{height: "4px"}} className="mb-2" />
             <span className="d-flex">
